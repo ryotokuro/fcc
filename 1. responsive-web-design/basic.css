@@ -27,3 +27,7 @@ p {
 #cat-photo-form {
     background-color: green;
 }
+
+[type='radio'] {
+    margin: 10px 0 15px 0;
+}
