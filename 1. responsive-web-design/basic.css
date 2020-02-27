@@ -1,3 +1,7 @@
+:root {
+    --blue-color: #0000A5;
+}
+
 h2 {
     font-family: Lobster, monospace;
 }
@@ -8,7 +12,7 @@ p {
 }
 
 .red-text {
-    color: red;
+    color: #F00;
 }
 
 .smaller-image {
@@ -25,9 +29,22 @@ p {
 }
 
 #cat-photo-form {
-    background-color: green;
+    background-color: rgb(0, 255, 0);
 }
 
-[type='radio'] {
+[type='checkbox'] {
     margin: 10px 0 15px 0;
+}
+
+#orange-text {
+    color: #FFA500;
+}
+
+.pink-text {
+    color: pink !important;
+}
+  
+.blue-text {
+    color: blue;
+    color: var(--blue-color, aqua);
 }
