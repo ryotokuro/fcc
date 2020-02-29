@@ -34,7 +34,7 @@ p {
 }
 
 #thumbnail {
-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .links {
@@ -62,4 +62,75 @@ section {
 
 .abs-box {
     position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+/*
+    Layering using z-index()
+*/
+.first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+}
+
+.second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: 1;
+}
+
+/*
+    Centering using margin:auto
+*/
+.centered-margin {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+/*
+    Transform: Scale
+*/
+.ball {
+    width: 40px;
+    height: 40px;
+    margin: 50 auto;
+    position: fixed;
+    background: linear-gradient(35deg,
+            #ccffff,
+            #ffcccc);
+    border-radius: 50%;
+}
+
+#ball1 {
+    left: 20%;
+}
+
+#ball2 {
+    left: 65%;
+    transform: scale(1.5);
+}
+
+/*
+    Transform: Skew
+*/
+#top {
+    background-color: red;
+    transform: skewY(-10deg);
+}
+
+#bottom {
+    background-color: blue;
+    transform: skewX(24deg);
 }
