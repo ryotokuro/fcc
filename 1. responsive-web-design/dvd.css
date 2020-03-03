@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    position: relative;
+}
+
+#dvd-logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    
+    animation-name: sliding;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: none;
+}
+
+#dvd-logo:after {
+    border-radius: 50%;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+}
+
+@keyframes sliding {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+    
+    50% {
+        background-color: blue;
+        top: 100%;
+        left: 100%;
+        transform: translate(100%, 100%);
+    }
+    
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
