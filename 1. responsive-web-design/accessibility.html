@@ -1,53 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <header>
-            <!-- Only have one h1 element! -->
-            <h1>The British Poet, 21 Savington</h1>
-            
-            <!-- Nav Elements -->
-            <nav>
-                <ul>
-                    <li>Put the pussy on a pedestal</li>
-                    <li>Put the pussy on a high horse</li>
-                    <li>That pussy to die for</li>
-                </ul>
-            </nav>
-        </header>
+
+<head>
+    <title>Applied Accessibility</title>
+    <link rel="stylesheet" href="accessibility.css">
+</head>
+
+<body>
+    <header>
+        <!-- Only have one h1 element! -->
+        <h1>The British Poet, 21 Savington</h1>
+
+        <!-- Nav Elements -->
+        <nav>
+            <ul>
+                <li>Put the pussy on a pedestal</li>
+                <li>Put the pussy on a high horse</li>
+                <li>That pussy to die for</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Images -->
+        <img src="" alt="Photo of the British Poet, 21 Savington">
+    </main>
+
+    <!-- Articles and Sections -->
+    <article class="blog-posts">
+        <section class="recent">
+            <h2>Having a lot of money</h2>
+        </section>
+    </article>
+
+    <!-- Audio -->
+    <!-- Interestingly, the screenreaders are FAST for those without impairments but the norm for those who require accessibility -->
+    <article class="music">
+        <audio id="meowClip" controls>
+            <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mp3">
+            A sound clip of Zersiax's screen reader in action.
+        </audio>
+    </article>
+
+    <!-- Figures -->
+    <figure>
+        <img>
+        <br>
+        <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>
+    </figure>
+
+    <!-- Forms -->
+    <form>
+        <!-- Text Input -->
+        <p>Sign up to the Savage Newsletter:</p>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
         
-        <!-- Main -->
-        <main>       
-            <!-- Images -->
-            <img src="" alt="Photo of the British Poet, 21 Savington">
-        </main>
-        
-        <!-- Articles and Sections -->
-        <article class="blog-posts">
-            <section class="recent">
-                <h2>Having a lot of money</h2>
-            </section>
-        </article>
-        
-        <!-- Audio -->
-        <!-- Interestingly, the screenreaders are FAST for those without impairments but the norm for those who require accessibility -->
-        <article class="music">
-            <audio id="meowClip" controls>
-                <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mp3">
-                A sound clip of Zersiax's screen reader in action.
-            </audio>
-        </article>
-        
-        <!-- Figures -->
-        <figure>
-            <img>
+        <!-- Radio Buttons (Fieldset) -->
+        <fieldset>
+            <legend>How savage are you?</legend>
+            <input id="noob" type="radio" name="level" value="noob">
+            <label for="noob">Noob</label>
             <br>
-            <figcaption></figcaption>
-        </figure>
+            <input id="average" type="radio" name="level" value="intermediate">
+            <label for="average">Average</label>
+            <br>
+            <input id="21" type="radio" name="level" value="pro">
+            <label for="21">Twenty One</label>
+        </fieldset>
         
-        <footer>
-            &copy; The British Gang
-        </footer>
-    </body>
+        <!-- Date Input -->
+        <p>Select the best date</p>
+        <label for="selectDate">Preferred Date:</label>
+        <input type="date" id="selectDate" name="date">
+        
+        <!-- DateTime -->
+        Today is <time datetime="2020-03-06">Friday the 6<sup>th</sup></time>. Hopefully it will be a good day! 
+    </form>
+    
+  
+    
+    
+    <footer>
+        &copy; The British Gang
+    </footer>
+</body>
+
 </html>
