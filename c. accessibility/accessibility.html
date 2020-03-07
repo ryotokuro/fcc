@@ -56,7 +56,7 @@
         <p>Sign up to the Savage Newsletter:</p>
         <label for="email">Email:</label>
         <input type="text" id="email" name="email">
-        
+
         <!-- Radio Buttons (Fieldset) -->
         <fieldset>
             <legend>How savage are you?</legend>
@@ -69,18 +69,54 @@
             <input id="21" type="radio" name="level" value="pro">
             <label for="21">Twenty One</label>
         </fieldset>
-        
+
         <!-- Date Input -->
         <p>Select the best date</p>
         <label for="selectDate">Preferred Date:</label>
         <input type="date" id="selectDate" name="date">
-        
-        <!-- DateTime -->
-        Today is <time datetime="2020-03-06">Friday the 6<sup>th</sup></time>. Hopefully it will be a good day! 
     </form>
+
+    <!-- DateTime -->
+    Today is <time datetime="2020-03-06">Friday the 6<sup>th</sup></time>. Hopefully it will be a good day!
+
+    <!-- Hidden Table (for screen reading) -->
+    <table class="sr-only">
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th></th>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- High Contrast Text (Recommended 4.5 to 1) -->
+    <section class="hc">
+        Internship: aka.ms/swe-intern
+        <br>
+        Graduate: aka.ms/swe-grad
+    </section>
+
+    <!-- Color Blindness -->
+    <section>
+        <button class="cb" accesskey="b">Color My World</button>
+    </section>
+
+    <!-- Access Keys -->
+    <section>
+        <a id="watch" href="https://kissanimefree.xyz/episode/your-name-episode-1/" accesskey="w">Watch 'Your Name' (Kimi no Na Wa)</a>
+    </section>
     
-  
-    
+    <!-- Tab Index -->
+    <p tabindex="1">
+        <strong>Important!</strong> Musubi is the old way of calling the local guardian god.
+    </p>
+    <p tabindex="0">Mitte kudasai. There are a lot more facts coming up!</p>
+    <p tabindex="2">I get keyboard focus second!</p>
     
     <footer>
         &copy; The British Gang

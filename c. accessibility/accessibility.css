@@ -1,0 +1,37 @@
+html {
+    font-family: monospace;
+    font-size: 16px;
+    background: #fff;
+}
+
+footer {
+    padding: 16px;
+    margin: 16px 0 16px 0;
+
+    background-color: burlywood;
+}
+
+/*
+    For only Screen Readers!
+*/
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
+
+.hc {
+    color: #636363;
+}
+
+.cb {
+    color: darkslategrey;
+    background-color: darkkhaki;
+}
+
+p:focus {
+    background-color: yellow;
+}
