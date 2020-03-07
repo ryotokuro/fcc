@@ -1,0 +1,23 @@
+/* 
+    Background turns black and font color turns white
+*/
+@media (min-width: 1500px) {
+    body {
+        background-color: black;
+        color: #fff;
+    }
+}
+
+/*
+    Responsive Image: doesn't exceed viewport size and maintains original aspect ratio
+*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#high-retina {
+    height: 100px;
+    width: 100px;
+}
