@@ -21,3 +21,11 @@ img {
     height: 100px;
     width: 100px;
 }
+
+h2 {
+    font-size: 3vw;
+}
+
+p {
+    font-size: 2vw;
+}
