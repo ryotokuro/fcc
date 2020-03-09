@@ -19,11 +19,13 @@ header .profile-thumbnail {
 header .profile-name {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     margin-left: 10px;
 }
 
 header .follow-btn {
     display: flex;
+    align-items: center;
     margin: 0 0 0 auto;
 }
 
