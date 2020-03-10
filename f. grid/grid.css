@@ -1,0 +1,31 @@
+.d1 {
+    background: LightSkyBlue;
+}
+
+.d2 {
+    background: LightSalmon;
+}
+
+.d3 {
+    background: PaleTurquoise;
+}
+
+.d4 {
+    background: LightPink;
+}
+
+.d5 {
+    background: PaleGreen;
+}
+
+.container {
+    display: grid;
+    /* Number of arguments is the number of col/row */
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px 20px;
+    
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+}
