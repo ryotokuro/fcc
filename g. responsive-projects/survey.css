@@ -1,0 +1,110 @@
+html {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(https://www.familyfeud.com/wp-content/uploads/2017/06/Desktop_PageHero_News-1.jpg);
+    background-position: 30% 30%;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding: 48px 0;
+    
+    color: white;
+}
+
+fieldset {
+    text-align: left;
+    margin: 0 auto;
+    padding: 32px;
+    width: 800px;
+    border: none;
+    background-color: rgba(27, 27, 50, 0.8);
+}
+
+.form-group {
+    margin: 32px 0;
+    color: white;
+}
+
+input {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    background-color: white;
+    margin-top: 16px;
+    
+    padding: 8px 0;
+    border-radius: 4px;
+}
+
+select {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    
+    margin-top: 16px;
+    padding: 8px 0;
+    border-radius: 4px;
+}
+
+.radio-group {
+    color: white;
+}
+
+.radio-group input {
+    width: 24px;
+}
+
+textarea {
+    margin-top: 16px;
+    font-family: 'Inter', sans-serif; 
+    display: block;
+    width: 100%;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/*
+    Footer
+*/
+footer {
+    padding: 32px 0;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+.content {
+    padding: 24px 0;
+    border-top: 3px solid white;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.copyright {
+    float: left;
+    text-align: left;
+}
+
+.external-links {
+    text-align: right;
+}
+
+a {
+    margin-left: 20px;
+}
