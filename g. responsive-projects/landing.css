@@ -1,0 +1,177 @@
+html {
+    background-color: #191919;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*
+    ==============
+        Body
+    ==============
+*/
+body {
+    min-width: 320px;
+    width: 1600px;
+    margin: 0 auto;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+/*
+    ==============
+        Header
+    ==============
+*/
+header {
+    max-width: 100%;
+    padding: 48px 0;
+    color: white;
+}
+
+nav {
+    max-width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+
+    float: left;
+}
+
+#logo:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#logo img {
+    max-width: 137px;
+}
+
+#logo span {
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    width: 1px !important;
+    height: 1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#surface {
+    float: left;
+}
+
+li {
+    display: inline-block;
+}
+
+button {
+    background-color: transparent;
+    padding: 16px 24px 16px 15px;
+
+    cursor: pointer;
+    border: none;
+
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+/*
+    ================
+        Nav>Text
+    ================
+*/
+h1 {
+    font-weight: 700;
+    padding: 0 0 2px;
+}
+
+.introduction {
+    width: 80%;
+    margin: 0 auto;
+}
+
+introduction p {
+    width: 100%;
+    padding: 24px 0;
+}
+
+
+/*
+    ==============
+        Main
+    ==============
+*/
+main {
+    width: 100%;
+}
+
+main img {
+    width: 100%;
+}
+
+
+/*
+    ==============
+        Footer
+    ==============
+*/
+footer {
+    background-color: #191919;
+    padding: 32px 0;
+
+    font-size: 11px;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+.content {
+    padding: 24px 0;
+    border-top: 3px solid white;
+    margin: 0 auto;
+}
+
+.language {
+    float: left;
+    text-align: left;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.external-links {
+    text-align: right;
+}
+
+a {
+    margin-left: 20px;
+}
