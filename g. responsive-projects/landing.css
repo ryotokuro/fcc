@@ -1,6 +1,7 @@
 html {
     background-color: #191919;
     font-family: 'Inter', sans-serif;
+    color: #fff;
 }
 
 a {
@@ -41,10 +42,18 @@ header {
 }
 
 nav {
+    /*
+    position: absolute;
+    top: 0;*/
+    display: flex;
+    
     max-width: 1600px;
     height: 100%;
     margin: 0 auto;
     font-size: 13px;
+    
+    align-content: center;
+    justify-content: center;
 }
 
 #logo {
@@ -54,8 +63,6 @@ nav {
     bottom: 0;
     left: 0;
     content: "";
-
-    float: left;
 }
 
 #logo:hover {
@@ -64,7 +71,7 @@ nav {
 }
 
 #logo img {
-    max-width: 137px;
+    width: 108px;
 }
 
 #logo span {
@@ -79,7 +86,12 @@ nav {
 }
 
 #surface {
-    float: left;
+    display: flex;
+    align-content: center;
+}
+
+#nav-main {
+
 }
 
 li {
@@ -100,6 +112,12 @@ button {
 span:hover {
     text-decoration: underline;
 }
+
+.nav-menu {
+    display: flex;
+    align-content: center;
+}
+
 
 /*
     ================
