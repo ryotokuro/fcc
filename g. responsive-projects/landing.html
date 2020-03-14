@@ -10,65 +10,90 @@
 
 <body>
     <header>
-        <nav id="nav-bar">
-            <a id="logo" href="https://www.microsoft.com/">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a class="company-logo" href="https://www.microsoft.com/">
                 <img id="header-img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1MmB8?ver=6c43g" alt="Microsoft Logo">
+                <!-- Accessibility for Screen Readers -->
                 <!--<span role="presentation" aria-hidden="true">Microsoft</span>-->
             </a>
 
-            <a id="surface" href="https://www.microsoft.com/en-us/surface">
-                Surface
-            </a>
-
-            <ul id="nav-main">
-                <li class="nested-menu">
-
-                    <div>
-                        <button>
-                            Computers
-                        </button>
-                    </div>
-
-                </li>
-
-                <li class="nested-menu">
-                    <div>
-                        <button>
-                            Accessories
-                        </button>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="https://www.microsoft.com/en-us/surface/buy" class="nav-link">Where to Buy</a>
-                </li>
-
-                <li class="nested-menu">
-                    <div>
-                        <button>
-                            Shop now
-                        </button>
-                    </div>
-                </li>
-                <li>
-                    <a href="https://www.microsoft.com/en-us/surface/business" class="nav-link">For business</a>
-                </li>
-                <li>
-                    <a href="https://support.microsoft.com/surface" class="nav-link">Support</a>
-                </li>
-            </ul>
-
-            <div class="nav-menu">
-                <button>
-                    <span>All Microsoft</span>
-                </button>
+            <!-- Link to Surfaces -->
+            <div>
+                <a class="company-logo" href="https://www.microsoft.com/en-us/surface">
+                    <span>Surface</span>
+                </a>
             </div>
 
-            <form class="nav-menu">
-                <input id="search" type="search" name="search" placeholder="Search Microsoft.com">
-            </form>
-        </nav>
+            <nav id="nav-bar" role="navigation">
+                <ul>
+                    <li class="nested-menu">
+                        <div>
+                            <button>
+                                Computers
+                            </button>
+                        </div>
+                    </li><!--
+                    --------------------------------------------------------------------------------
+                    --><li class="nested-menu">
+                        <div>
+                            <button>
+                                Accessories
+                            </button>
+                        </div>
+                    </li><!--
+                    --------------------------------------------------------------------------------
+                    --><li>
+                        <a class="nav-link" href="https://www.microsoft.com/en-us/surface/buy">
+                            Where to Buy
+                        </a>
+                    </li><!--
+                    -----------------------------
+                    --><li class="nested-menu">
+                        <div>
+                            <button>
+                                Shop now
+                            </button>
+                        </div>
+                    </li><!--
+                    --------------------------------------------------------------------------------
+                    --><li>
+                        <a class="nav-link" href="https://www.microsoft.com/en-us/surface/business">
+                            For business
+                        </a>
+                    </li><!--
+                    --------------------------------------------------------------------------------
+                    --><li>
+                        <a class="nav-link" href="https://support.microsoft.com/surface">
+                            Support
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <div class="nested-menu">
+                    <button>
+                        <span>All Microsoft</span>
+                    </button>
+                </div>
 
+                <form id="search-form" role="search">
+                    <!--<input id="search" type="search" name="search" placeholder="Search Microsoft.com">-->
+                    <button>
+                        <span>Search</span>
+                    </button>
+                </form>
+                
+                <div class="me">
+                    <a class="nav-link">
+                        Satya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
         <section class="introduction">
             <h1 id="title">Introducing Surface Neo</h1>
 
@@ -76,24 +101,22 @@
                 A groundbreaking new dual-screen device that redefines how you get things done. With two 9” screens, a revolutionary 360° hinge, touch, pen, keyboard, and incredible new Windows experiences, Surface Neo enables you to do more, anywhere. Available now.
             </p>
         </section>
-    </header>
 
-    <main>
         <div>
             <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3T0LC?ver=a112">
         </div>
-        
+
         <video id="video" src="blob:https://www.microsoft.com/7547d360-7447-402e-943f-3f2e58b3543f"></video>
-        
+
         <section id="sign-up">
             <h2>Sign-up for more info</h2>
-            
+
             <p>Stay in touch and be the first to get Surface news, updates and tips.</p>
-            
+
             <fieldset>
                 <form id="form" action="https://www.freecodecamp.com/email-submit">
                     <input type="email" id="email" placeholder="satya@microsoft.com">
-                    
+
                     <input type="submit" id="submit" name="submit">
                 </form>
             </fieldset>
@@ -121,6 +144,4 @@
             </div>
         </section>
     </footer>
-</body>
-
-</html>
+</body></html>

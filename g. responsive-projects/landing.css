@@ -1,7 +1,16 @@
+/*
+    ==============
+        Globals
+    ==============
+*/
 html {
     background-color: #191919;
     font-family: 'Inter', sans-serif;
     color: #fff;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 a {
@@ -14,17 +23,20 @@ a:hover {
     cursor: pointer;
 }
 
+div {
+    display: inline-block;
+}
+
 /*
-    ==============
+    ============
         Body
-    ==============
+    ============
 */
 body {
     min-width: 320px;
     max-width: 1600px;
     margin: 0 auto;
-
-    font-size: 20px;
+    
     line-height: 24px;
     text-align: center;
 }
@@ -38,41 +50,77 @@ body {
 header {
     max-width: 100%;
     padding: 48px 0;
-    color: white;
+    color: #fff;
 }
 
-nav {
+@media (min-width: 860px) {
+    .nav-container {
+        position: relative;
+    }
+    
+    .company-logo {
+        display: block;
+        margin-top: 1px;
+        padding: 16px 6px 16px 10px;
+        float: left;
+        width: 137px;
+    }
+    
+    nav {
+        overflow: hidden;
+        height: 100%;
+        border: 1px solid white;
+    }
+    
+    nav>ul>li {
+        display: inline-block;
+    }
+    
+    .nav-link {
+        display: inline-block;
+        margin-top: 1px;
+        padding: 16px 8px 10px;
+        border: 1px solid green;
+        /*        height: 48px;*/
+    }
+    
+    .nav-actions {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.nav-container {
     display: flex;
-    justify-content: center;
-    
-    height: 54px;
-    position: relative;
-    top: 0;
-    
     font-size: 13px;
+    height: 100%;
 }
 
-#logo {
-    
+/* Microsoft Company Logo */
+.company-logo {
+    display: inline-block;
+    position: relative;
+    outline: 2px solid transparent;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -3px;
+}
+
+.company-logo:after {
     position: relative;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     content: "";
-    max-width: 108px;
-}
-
-#logo:hover {
-    cursor: pointer;
-    text-decoration: none;
 }
 
 #header-img {
-    width: 100%;
+    width: 108px;
 }
 
-#logo span {
+/*
+.company-logo span {
     position: absolute !important;
     overflow: hidden !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
@@ -82,58 +130,64 @@ nav {
     padding: 0 !important;
     margin: 0 !important;
 }
+*/
 
-#surface {
+@media (min-width: 1779px) {
+    .nav-container button {
+        padding: 16px 30px 16px 16px;
+    }
+}
+
+/* Navigation Links */
+nav {
+    display: inline-block;
     
+    height: 54px;
+    font-size: 13px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 li {
     display: inline-block;
-    text-align: center;
-}
+} 
 
-button {
+.nav-container button {
+    position: relative;
+    top: -3px;
+    
     background-color: transparent;
-    padding: 16px 30px 16px 16px;
-
+    border: solid 1px red;
     cursor: pointer;
-    border: none;
-
-    color: #fff;
+    
     font-family: 'Inter', sans-serif;
+    color: #fff;
 }
 
-span:hover {
-    text-decoration: underline;
-}
-
-.nav-menu {
-    display: flex;
-    align-content: center;
-}
-
-#search {
-    height: 32px;
+.nav-actions {
+    float: right;
 }
 
 
 /*
-    ================
-        Nav>Text
-    ================
+    ====================
+        Introduction
+    ====================
 */
 h1 {
+    font-size: 34px;
     font-weight: 700;
     padding: 0 0 2px;
 }
 
-.introduction {
+.introduction p {
+    font-size: 20px;
     width: 80%;
     margin: 0 auto;
-}
-
-introduction p {
-    width: 100%;
     padding: 24px 0;
 }
 
@@ -162,11 +216,11 @@ footer {
     padding: 32px 0;
 
     font-size: 11px;
-    color: white;
+    color: #fff;
 }
 
 footer a {
-    color: white;
+    margin-left: 20px;
 }
 
 .content {
@@ -180,14 +234,6 @@ footer a {
     text-align: left;
 }
 
-.copyright {
-    text-align: right;
-}
-
 .external-links {
-    text-align: right;
-}
-
-a {
-    margin-left: 20px;
+    float: right;
 }
