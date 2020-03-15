@@ -19,7 +19,7 @@
             </a>
 
             <!-- Link to Surfaces -->
-            <div>
+            <div class="surface">
                 <a class="company-logo" href="https://www.microsoft.com/en-us/surface">
                     <span>Surface</span>
                 </a>
@@ -33,68 +33,82 @@
                                 Computers
                             </button>
                         </div>
-                    </li><!--
+                    </li>
+                    <!--
                     --------------------------------------------------------------------------------
-                    --><li class="nested-menu">
+                    -->
+                    <li class="nested-menu">
                         <div>
                             <button>
                                 Accessories
                             </button>
                         </div>
-                    </li><!--
+                    </li>
+                    <!--
                     --------------------------------------------------------------------------------
-                    --><li>
+                    -->
+                    <li>
                         <a class="nav-link" href="https://www.microsoft.com/en-us/surface/buy">
                             Where to Buy
                         </a>
-                    </li><!--
+                    </li>
+                    <!--
                     -----------------------------
-                    --><li class="nested-menu">
+                    -->
+                    <li class="nested-menu">
                         <div>
                             <button>
                                 Shop now
                             </button>
                         </div>
-                    </li><!--
+                    </li>
+                    <!--
                     --------------------------------------------------------------------------------
-                    --><li>
+                    -->
+                    <li>
                         <a class="nav-link" href="https://www.microsoft.com/en-us/surface/business">
                             For business
                         </a>
-                    </li><!--
+                    </li>
+                    <!--
                     --------------------------------------------------------------------------------
-                    --><li>
+                    -->
+                    <li>
                         <a class="nav-link" href="https://support.microsoft.com/surface">
                             Support
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="nav-actions">
-                <div class="nested-menu">
+
+            <section class="nav-actions">
+                <div class="all-nav">
                     <button>
                         <span>All Microsoft</span>
                     </button>
-                </div>
+                </div><!--
 
-                <form id="search-form" role="search">
+                --><form id="search-form" role="search">
                     <!--<input id="search" type="search" name="search" placeholder="Search Microsoft.com">-->
                     <button>
                         <span>Search</span>
                     </button>
-                </form>
-                
-                <div class="me">
-                    <a class="nav-link">
-                        Satya
-                    </a>
+                </form><!--
+
+                --><div class="profile">
+                    <button>
+                        <span>Satya</span>
+                        <div id="profile-photo">
+                            <div></div>
+                        </div>
+                    </button>
                 </div>
-            </div>
+            </section>
         </div>
     </header>
 
     <main>
-        <section class="introduction">
+        <section class="banner">
             <h1 id="title">Introducing Surface Neo</h1>
 
             <p id="description">
@@ -102,11 +116,10 @@
             </p>
         </section>
 
-        <div>
-            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3T0LC?ver=a112">
-        </div>
-
-        <video id="video" src="blob:https://www.microsoft.com/7547d360-7447-402e-943f-3f2e58b3543f"></video>
+        <video preload="none" id="video" poster="//img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3T0LC?ver=a112">
+            <source src="https://www.youtube.com/watch?v=fssZICsV4Rg" type="video/youtube">
+            Your browser does not support playing this video.
+        </video>
 
         <section id="sign-up">
             <h2>Sign-up for more info</h2>
@@ -115,7 +128,7 @@
 
             <fieldset>
                 <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input type="email" id="email" placeholder="satya@microsoft.com">
+                    <input type="email" id="email" name="email" placeholder="satya@microsoft.com">
 
                     <input type="submit" id="submit" name="submit">
                 </form>

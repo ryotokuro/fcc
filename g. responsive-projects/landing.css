@@ -9,7 +9,9 @@ html {
     color: #fff;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -36,7 +38,7 @@ body {
     min-width: 320px;
     max-width: 1600px;
     margin: 0 auto;
-    
+
     line-height: 24px;
     text-align: center;
 }
@@ -49,7 +51,7 @@ body {
 */
 header {
     max-width: 100%;
-    padding: 48px 0;
+    padding: 10px 0 0;
     color: #fff;
 }
 
@@ -57,33 +59,30 @@ header {
     .nav-container {
         position: relative;
     }
-    
+
     .company-logo {
-        display: block;
-        margin-top: 1px;
         padding: 16px 6px 16px 10px;
         float: left;
+        margin-top: 1px;
         width: 137px;
     }
-    
+
     nav {
         overflow: hidden;
         height: 100%;
-        border: 1px solid white;
     }
-    
-    nav>ul>li {
+
+    nav > ul > li {
         display: inline-block;
     }
-    
+
     .nav-link {
         display: inline-block;
         margin-top: 1px;
         padding: 16px 8px 10px;
-        border: 1px solid green;
         /*        height: 48px;*/
     }
-    
+
     .nav-actions {
         display: flex;
         justify-content: flex-end;
@@ -91,19 +90,20 @@ header {
 }
 
 .nav-container {
-    display: flex;
+    float: none;
     font-size: 13px;
     height: 100%;
+    width: 1600px;
 }
 
 /* Microsoft Company Logo */
 .company-logo {
     display: inline-block;
     position: relative;
+
     outline: 2px solid transparent;
     font-size: 18px;
     font-weight: 600;
-    margin-top: -3px;
 }
 
 .company-logo:after {
@@ -132,6 +132,21 @@ header {
 }
 */
 
+.surface {
+    float: left;
+}
+
+.surface:before {
+    content: "|";
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: -8px;
+    padding-left: 18px;
+    position: absolute;
+    top: 16px;
+}
+
 @media (min-width: 1779px) {
     .nav-container button {
         padding: 16px 30px 16px 16px;
@@ -141,7 +156,9 @@ header {
 /* Navigation Links */
 nav {
     display: inline-block;
-    
+    white-space: nowrap;
+    float: left;
+
     height: 54px;
     font-size: 13px;
 }
@@ -154,37 +171,77 @@ ul {
 
 li {
     display: inline-block;
-} 
+}
 
 .nav-container button {
     position: relative;
-    top: -3px;
-    
+
     background-color: transparent;
-    border: solid 1px red;
+    border: solid 1px transparent;
     cursor: pointer;
-    
+
     font-family: 'Inter', sans-serif;
     color: #fff;
 }
 
-.nav-actions {
-    float: right;
+.nav-container button:after {
+    font-family: "Inter", monospace;
+    content: '˅';
+    position: absolute;
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 10px;
+    padding-top: 4px;
 }
 
+.nav-actions {
+    float: right;
+    display: inline-block;
+    white-space: nowrap;
+
+    height: 100%;
+}
+
+.nav-actions button {
+    display: inline-block;
+    top: 3px;
+}
+
+.all-nav, #search-form {
+    float: left;
+}
+
+#profile-photo {
+    display: inline-block;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F19%2FSatya_smiling-print.jpg%2F1200px-Satya_smiling-print.jpg&f=1&nofb=1);
+    
+    background-position: center;
+    background-size: cover;
+    
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    margin: 8px;
+}
 
 /*
     ====================
-        Introduction
+        Title Banner
     ====================
 */
+.banner {
+    bottom: 10px
+    padding: 48px 0 0;
+}
+
 h1 {
     font-size: 34px;
     font-weight: 700;
     padding: 0 0 2px;
 }
 
-.introduction p {
+.banner p {
     font-size: 20px;
     width: 80%;
     margin: 0 auto;
@@ -205,6 +262,13 @@ main img {
     width: 100%;
 }
 
+video {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
 
 /*
     ==============
