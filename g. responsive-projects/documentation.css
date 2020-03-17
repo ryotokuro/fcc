@@ -1,8 +1,180 @@
+/*
+    =================
+        Structure
+    =================
+*/
 html {
+    font-size: 16px;
+    font-family: Segoe UI, SegoeUI, Segoe WP, Helvetica Neue, Helvetica, Tahoma, Arial, sans-serif;
+}
+
+.dark-mode {
+    background-color: #171717;
+    color: #E3E3E3;
+}
+
+.grid-container {
+    width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 2fr 32fr 2fr;
+    grid-template-areas:
+        "header header"
+        "hero hero"
+        "nav content"
+        "footer footer";
+}
+
+/*
+    ====================
+        Global Styles
+    ====================
+*/
+h1,
+h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+a {
+    color: #4db2ff;
+}
+
+/*
+    ========================
+        Primary Header
+    ========================
+*/
+header {
+    grid-area: header;
+
+}
+
+.c-logo {
+    float: left;
+    
+    width: 108px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-image: url(https://docs.microsoft.com/en-us/media/microsoft-logo-light.png);
+    background-size: contain;
+}
+
+.documentation a {
+    padding-left: 16px;
+    color: #E3E3E3;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.documentation a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+    
+/*
+    ========================
+        Secondary Header
+    ========================
+*/
+.hero, header {
+    width: 100%;
+    background-color: #171717;
+}
+
+.hero {
+    grid-area: hero;
+    padding: 16px;
+}
+
+nav {
+    grid-area: nav;
+    font-size: 20px;
+    padding: 32px;
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+    ==============
+        Main
+    ==============
+*/
+#main-doc {
+    grid-area: content;
+    background-color: #2e2e2e;
+}
+
+.main-section {
+    padding: 16px;
+}
+
+dt, code {
+    padding: 5px;
     font-family: monospace;
+    background-color: #EEE;
+    color: darkslategrey;
+    border-left: 4px solid #3d7e9a;
+    tab-size: 4;
+    margin-bottom: 20px;
+}
+
+dt {
+    width: 50px;
 }
 
 code {
-    font-family: monospace;
-    background-color: lightgrey;
+    width: 100%;
+}
+
+.keyword {
+    font-weight: 600;
+    color: #07a;
+}
+
+.function {
+    font-weight: 600;
+    color: #F25022;
+}
+
+
+/*
+    ==============
+        Footer
+    ==============
+*/
+footer {
+    grid-area: footer;
+    padding: 32px;
+    
+    border-top: 2px solid lightgrey;
+    font-size: 14px;
+    text-align: right;
+}
+
+footer li {
+    display: inline-block;
 }

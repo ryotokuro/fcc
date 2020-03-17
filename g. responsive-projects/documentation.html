@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html class="dark-mode">
 
 <head>
     <title>JavaScript Documentation</title>
@@ -8,70 +8,238 @@
 </head>
 
 <body>
-    <aside>
-        <h1></h1>
-        <ul>
-            <li>
-                <a href="#intro">Introduction</a>
-            </li>
-            <li>
-                <a href="#presumed">Presumed Knowledge</a>
-            </li>
-            <li>
-                <a href="#jsJava">JavaScript vs. Java</a>
-            </li>
+    <div class="grid-container">
+        <header>
+            <a href="https://www.microsoft.com">
+                <div class="c-logo"></div>
+            </a>
+            
+            <div class="documentation">
+                <a>Documentation</a>
+            </div>
+        </header>
 
-            <li>
-                <a href="#firstProgram">Your First Program</a>
-            </li>
-        </ul>
-    </aside>
-    <main>
-        <section id="intro">
-            <h2>Introduction</h2>
+        <section class="hero">
+            <h1>JavaScript Documentation</h1>
+
             <p>
-
+                JavaScript is a programming language that adds interactivity to your website (for example games, responses when buttons are pressed or data is entered in forms, dynamic styling, and animation).
             </p>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
         </section>
 
-        <section id="presumed">
-            <h2>Presumed Knowledge</h2>
-            <p>
-
-            </p>
+        <nav id="navbar">
             <ul>
-                <li></li>
-                <li></li>
+                <li>
+                    <a href="#Introduction" class="nav-link">Introduction</a>
+                </li>
+                <!--
+
+                -->
+                <li>
+                    <a href="#Presumed_Knowledge" class="nav-link">Presumed Knowledge</a>
+                </li>
+                <!--
+
+                -->
+                <li>
+                    <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+                </li>
+                <!--
+
+                -->
+                <li>
+                    <a href="#Your_First_Program" class="nav-link">Your First Program</a>
+                </li>
+                <!--
+
+                -->
+                <li>
+                    <a href="#Declarations" class="nav-link">Declarations</a>
+                </li>
+                <!--
+
+                -->
+                <li>
+                    <a href="#Variables" class="nav-link">Variables</a>
+                </li>
             </ul>
-        </section>
+        </nav>
 
-        <section id="jsJava">
-            <h2>JavaScript vs Java</h2>
-            <p>
+        <!--
+            1. I can see a main element with a corresponding id="main-doc",
+            which contains the page's main content (technical documentation).
+        -->
+        <main id="main-doc">
+            <!--
+                2. Several section elements, each with a class of main-section.
+            -->
+            <section id="Introduction" class="main-section">
+                <!--
+                    3. The first element within each .main-section should be a header
+                    element which contains text that describes the topic of that section.
+                -->
+                <h2>Introduction</h2>
+                <p>
+                    JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.
+                </p>
+                <p>
+                    JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+                </p>
+                <ul>
+                    <li>
+                        Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+                    </li>
+                    <li>
+                        Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server
+                    </li>
+                </ul>
+            </section>
+            <!--
+                4. Each section element with the class of main-section should also have an 
+                    id that corresponds with the text of each header contained within it.
+                    Any spaces should be replaced with underscores (e.g. The section that
+                    contains the header "JavaScript and Java" should have a corresponding
+                    id="JavaScript_and_Java").
+            -->
+            <section id="Presumed_Knowledge" class="main-section">
+                <h2>Presumed Knowledge</h2>
+                <p>
+                    This guide assumes you have the following basic background:
+                </p>
+                <ul>
+                    <li>
+                        A general understanding of the Internet and the World Wide Web (<a href="https://developer.mozilla.org/en-US/docs/Glossary/WWW">WWW</a>).
+                    </li>
+                    <li>
+                        Good working knowledge of HyperText Markup Language (<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a>).
+                    </li>
+                    <li>
+                        Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>.
+                    </li>
+                </ul>
+            </section>
 
-            </p>
+            <section id="JavaScript_and_Java" class="main-section">
+                <h2>JavaScript and Java</h2>
+                <p>
+                    JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+                </p>
+                <p>
+                    In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+                </p>
+                <p>
+                    JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+                </p>
+                <p>
+                    Java is a class-based programming language designed for fast execution and type safety. Type safety means, for instance, that you can't cast a Java integer into an object reference or access private memory by corrupting Java bytecodes. Java's class-based model means that programs consist exclusively of classes and their methods. Java's class inheritance and strong typing generally require tightly coupled object hierarchies. These requirements make Java programming more complex than JavaScript programming.
+                </p>
+                <p>
+                    In contrast, JavaScript descends in spirit from a line of smaller, dynamically typed languages such as HyperTalk and dBASE. These scripting languages offer programming tools to a much wider audience because of their easier syntax, specialized built-in functionality, and minimal requirements for object creation.
+                </p>
+            </section>
+
+            <section id="Your_First_Program" class="main-section">
+                <h2>Your First Program</h2>
+                <p>
+                    To get started with writing JavaScript, open the Web Console in multi-line mode, and write your first "Hello world" JavaScript code:
+                </p>
+                <code>
+                    <span>(function(){</span><br>
+                    <span>"use strict";</span><br>
+                    <span>/* Start of your code */</span><br>
+                    <span class="function">function</span>
+                    <span>>greetMe(yourName) {</span><br>
+                    <span class="function">alert</span><span>('Hello ' + yourName);</span><br>
+                    }
+
+                    greetMe('World');
+                    /* End of your code */
+                    })();
+                </code>
+
+                <p>
+                    In the following pages, this guide introduces you to the JavaScript syntax and language features, so that you will be able to write more complex applications.
+                </p>
+                <p>
+                    But for now, remember to always include the (function(){"use strict"; before your code, and add })(); to the end of your code. You will learn what these mean, but for now they can be thought of as doing the following:
+                </p>
+                <ol>
+                    <li>Massively improve performance.</li>
+                    <li>Prevent stupid semantics in JavaScript that trip up beginners.</li>
+                    <li>Prevent code snippets executed in the console from interacting with one-another (e.g., having something created in one console execution being used for a different console execution).</li>
+                </ol>
+            </section>
+
+            <section id="Declarations" class="main-section">
+                <h2>Declarations</h2>
+
+                <p>JavaScript has three kinds of variable declarations:</p>
+                <dl>
+                    <dt>var</dt>
+                    <dd>Declares a variable, optionally initializing it to a value.</dd>
+
+                    <dt>let</dt>
+                    <dd>Declares a block-scoped, local variable, optionally initializing it to a value.</dd>
+
+                    <dt>const</dt>
+                    <dd>Declares a block-scoped, read-only named constant.</dd>
+                </dl>
+            </section>
+
+            <section id="Variables" class="main-section">
+                <h2>Variables</h2>
+
+                <p>
+                    You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+                </p>
+                <p>
+                    A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0–9).
+                </p>
+                <p>
+                    Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) as well as "a" through "z" (lowercase).
+                </p>
+                <p>
+                    You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers. (For more details, see this blog post.) You can also use the Unicode escape sequences as characters in identifiers.
+                </p>
+                <p>
+                    Some examples of legal names are Number_hits, temp99, $credit, and _name.
+                </p>
+
+                <h3>Evaluating Variables</h3>
+                <h3>Variable Scope</h3>
+            </section>
+        </main>
+
+        <footer>
             <ul>
-                <li></li>
-                <li></li>
+                <li>
+                    <a>Previous Version</a>
+                </li>
+                <li>
+                    <a>Docs</a>
+                </li>
+                <li>
+                    <a>Blog</a>
+                </li>
+                <li>
+                    <a>Contribute</a>
+                </li>
+                <li>
+                    <a>Privacy &amp; Cookies</a>
+                </li>
+                <li>
+                    <a>Terms of Use</a>
+                </li>
+                <li>
+                    <a>Site Feedback</a>
+                </li>
+                <li>
+                    <a>Trademarks</a>
+                </li>
+                <li>
+                    &copy; Microsoft 2020
+                </li>
             </ul>
-        </section>
-
-        <section id="firstProgram">
-            <h2>Your First Program</h2>
-            <p>
-
-            </p>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
-
-    </main>
-</body>
-
-</html>
+        </footer>
+    </div>
+</body></html>
